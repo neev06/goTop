@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="stylesheet" href="styles.css">
+    </head>
+ 
+
+    <body>
+
+
+    <button onclick="gotopFunction()" id="goTop" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
+    <script>
+
+    //Selecting the button with getElementById() command.
+
+    var goTop = document.getElementById("goTop");
+
+    //When the user will scroll down 200px so the button should appear else dissapear,
+    //You can change the value of 200px according to you.
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        goTop.style.display = "block";
+      } else {
+        goTop.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the page
+
+        function gotopFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+        </script>
+
+     <!-- adding dummy text so that the page is scrollable -->
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Sunt harum delectus neque numquam, modi nihil, nobis </p>
+     
+  </body>
+</html>

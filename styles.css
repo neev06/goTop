@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+#goTop{
+    position: fixed;
+    z-index: 1000;
+    bottom: 2%;
+    left: 95%;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 2px 2px 5px rgba(94,104,121,0.288);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display : none;
+  }
+  p{
+      font-size: 7em;
+      color: #fff;
+  }
+
+  /* for smooth scrolling when the gotop button is clicked */
+  /* check the usage of this scroll-behaviour by removing it once */
+  
+  html{
+    scroll-behavior: smooth;
+  }
+ 
